@@ -9,7 +9,7 @@ spec:
   replicas: 3
   selector:
     matchLabels:
-      app: app
+      app: chatapp
   strategy: {}
   template:
     metadata:
