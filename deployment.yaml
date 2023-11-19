@@ -18,7 +18,7 @@ spec:
         app: chatapp
     spec:
       containers:
-      - image: dockertrain44/chat:18
+      - image: dockertrain44/chat:19
         name: chatapp
         resources: {}
 status: {}
