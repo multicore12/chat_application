@@ -18,7 +18,7 @@ spec:
         app: flaskdemo
     spec:
       containers:
-      - image: dockertrain44/chat:11
+      - image: dockertrain44/chat:18
         name: flaskdemo
         resources: {}
 status: {}
