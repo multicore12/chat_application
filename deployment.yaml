@@ -3,23 +3,23 @@ kind: Deployment
 metadata:
   creationTimestamp: null
   labels:
-    app: flaskdemo
-  name: flaskdemo
+    app: chatapp
+  name: chatapp
 spec:
   replicas: 3
   selector:
     matchLabels:
-      app: flaskdemo
+      app: app
   strategy: {}
   template:
     metadata:
       creationTimestamp: null
       labels:
-        app: flaskdemo
+        app: chatapp
     spec:
       containers:
       - image: dockertrain44/chat:18
-        name: flaskdemo
+        name: chatapp
         resources: {}
 status: {}
 ---
@@ -32,7 +32,7 @@ metadata:
 spec:
   type: LoadBalancer
   ports:
-  - port: 80
-    targetPort: 5000
+  - port: 3000
+    targetPort: 3000
   selector:
-    app: flaskdemo
+    app: chatapp
